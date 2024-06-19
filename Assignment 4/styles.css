@@ -1,0 +1,27 @@
+header {
+	background-color: #6bc45f;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+nav{
+    color:#6bc45f;
+    align-items: center;
+}
+
+#profile-image, h2 {
+    text-align: center;
+}
+#profile-pic{
+    border-radius: 50%;
+}
+footer{
+    background-color: #6bc45f;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+nav,footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
