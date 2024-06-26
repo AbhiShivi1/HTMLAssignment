@@ -1,0 +1,37 @@
+
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 auto;
+      }
+      th,
+      td,
+      thead {
+        border: 2px solid black;
+        font-weight: bold;
+      }
+      .table-4 {
+        border: 1px solid black;
+        border-collapse: separate;
+      }
+      .table-4 td,
+      th {
+        border: 1px solid black;
+      }
+      .table-4 > thead {
+        background-color: #617541;
+        height: 45px;
+      }
+      .table-4 .foot {
+        height: 45px;
+        background-color: #25355e;
+      }
+      .table-4 img {
+        width: 90%;
+        height: 100%;
+      }
+      .image-container {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-right: 1%;
+      }

@@ -1,0 +1,75 @@
+/* Prevents scrolling on the webpage and removes default margin and padding from the body */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensures the textarea has a minimum width and height */
+textarea {
+  min-width: 170px;
+  min-height: 32px;
+}
+
+select {
+  min-width: 170px;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+
+/* Ensures that the "row" class clears its floated children */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.coding-languages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coding-languages div {
+  margin-right: 10px;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.coding-label {
+  width: 10%;
+  padding-left: 5px;
+}
+
+.genders {
+  margin-top: 5px;
+  display: flex;
+}
+/* Styles here will apply only when the screen width is 1050px or less */
+@media only screen and (max-width: 1050px) {
+  /* Sets the "column" class to take full width of the container */
+  .column {
+    width: 100%;
+  }
+
+  .coding-languages {
+    flex-direction: column;
+  }
+
+  .coding-label {
+    width: 100%;
+  }
+
+  .genders {
+    flex-direction: column;
+  }
+}

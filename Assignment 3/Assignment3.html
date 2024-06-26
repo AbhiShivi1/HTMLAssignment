@@ -4,68 +4,13 @@
     <meta charset="UTF-8" />
     <title>Assignment 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      textarea {
-        min-width: 170px;
-        min-height: 32px;
-      }
-
-      select {
-        min-width: 170px;
-      }
-      .column {
-        float: left;
-        width: 40%;
-        padding: 10px;
-      }
-
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      .coding-languages {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .coding-languages div {
-        margin-right: 10px;
-      }
-
-      .form-section {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: flex-start;
-        padding: 10px;
-      }
-
-      .coding-label {
-        width: 10%;
-        padding-left: 5px;
-      }
-
-      @media only screen and (max-width: 600px) {
-        /* Styles here will apply only when the screen width is 600px or less */
-        .column {
-          width: 100%;
-        }
-
-        .coding-languages {
-          flex-direction: column;
-        }
-
-        .coding-label {
-          width: 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
   </head>
 
   <body>
     <form action="location-to-send-data">
+      <!-- First row with first name and last name fields -->
       <div class="row">
         <div class="column">
           <label for="fname">First Name:</label><br />
@@ -76,6 +21,7 @@
           <input type="text" id="lname" name="lname" /><br />
         </div>
       </div>
+      <!-- Second row with email and contact number fields -->
       <div class="row">
         <div class="column">
           <label for="email">Email:</label><br />
@@ -86,6 +32,7 @@
           <input type="text" id="contact" name="contact" /><br />
         </div>
       </div>
+      <!-- Third row with username and password fields -->
       <div class="row">
         <div class="column">
           <label for="uname">Username:</label><br />
@@ -96,6 +43,7 @@
           <input type="password" id="pass" name="pass" /><br />
         </div>
       </div>
+      <!-- Fourth row with address and gender fields -->
       <div class="row">
         <div class="column">
           <label for="add">Address:</label><br />
@@ -103,15 +51,20 @@
         </div>
         <div class="column">
           <label for="gender">Gender:</label><br />
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female" /><label
-            for="female"
-            >Female</label
-          >
+          <div class="genders">
+            <div>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
           <br />
         </div>
       </div>
+      <!-- Fifth row with qualification and experience fields -->
       <div class="row">
         <div class="column">
           <label for="qualification">Qualification:</label><br />
@@ -135,6 +88,7 @@
           <br />
         </div>
       </div>
+      <!-- Section for selecting coding languages -->
       <div class="form-section">
         <label class="coding-label">Coding Languages:</label>
         <div class="coding-languages">
